@@ -1,0 +1,699 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ALEXHP-5CD1101L</Machine>
+    <WindowsUser>matza</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>61e5f403-5d6c-42ff-be98-027dd628e4bc</PackageIdentityName>
+    <PackageIdentityPublisher>CN=matza</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\obj\x64\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\bin\x64\Debug\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\bin\x64\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.web.webview2\1.0.2651.64\build\..\\runtimes\win-x64\native_uap\Microsoft.Web.WebView2.Core.dll">
+      <PackagePath>Microsoft.Web.WebView2.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.web.webview2\1.0.2651.64\lib_manual\net6.0-windows10.0.17763.0\Microsoft.Web.WebView2.Core.Projection.dll">
+      <PackagePath>Microsoft.Web.WebView2.Core.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.web.webview2\1.0.2651.64\lib\Microsoft.Web.WebView2.Core.winmd">
+      <PackagePath>Microsoft.Web.WebView2.Core.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\BarcodePage1.xbf">
+      <PackagePath>BarcodePage1.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\ConfigPage9.xbf">
+      <PackagePath>ConfigPage9.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\DashPage7.xbf">
+      <PackagePath>DashPage7.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\FactPage6.xbf">
+      <PackagePath>FactPage6.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\InvPage2.xbf">
+      <PackagePath>InvPage2.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\LoginPage.xbf">
+      <PackagePath>LoginPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\MainWindow.xbf">
+      <PackagePath>MainWindow.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\NitPage4.xbf">
+      <PackagePath>NitPage4.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\NotifiPage8.xbf">
+      <PackagePath>NotifiPage8.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\ProductDetailPage.xbf">
+      <PackagePath>ProductDetailPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\ProductListPage.xbf">
+      <PackagePath>ProductListPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\PurPage3.xbf">
+      <PackagePath>PurPage3.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\ShellPage.xbf">
+      <PackagePath>ShellPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\SinPermisosPage10.xbf">
+      <PackagePath>SinPermisosPage10.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\Styles.xbf">
+      <PackagePath>Styles.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\VentasPage5.xbf">
+      <PackagePath>VentasPage5.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\Assets\Agropecuaria CM_.png">
+      <PackagePath>Assets\Agropecuaria CM_.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\Assets\candadodefinitivo.png">
+      <PackagePath>Assets\candadodefinitivo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\Assets\logotipo.png">
+      <PackagePath>Assets\logotipo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\Assets\LOGO-AgrocomercialMendoza.jpg">
+      <PackagePath>Assets\LOGO-AgrocomercialMendoza.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\runtimes\win-x64\native\WebView2Loader.dll">
+      <PackagePath>runtimes\win-x64\native\WebView2Loader.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.22621.0\Redist\Debug\x64\ucrtbased.dll">
+      <PackagePath>ucrtbased.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\LargeTile.scale-100.png">
+      <PackagePath>Images\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\LargeTile.scale-125.png">
+      <PackagePath>Images\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\LargeTile.scale-150.png">
+      <PackagePath>Images\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\LargeTile.scale-200.png">
+      <PackagePath>Images\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\LargeTile.scale-400.png">
+      <PackagePath>Images\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\SmallTile.scale-100.png">
+      <PackagePath>Images\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\SmallTile.scale-125.png">
+      <PackagePath>Images\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\SmallTile.scale-150.png">
+      <PackagePath>Images\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\SmallTile.scale-200.png">
+      <PackagePath>Images\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\SmallTile.scale-400.png">
+      <PackagePath>Images\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\SplashScreen.scale-100.png">
+      <PackagePath>Images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\SplashScreen.scale-125.png">
+      <PackagePath>Images\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\SplashScreen.scale-150.png">
+      <PackagePath>Images\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\SplashScreen.scale-200.png">
+      <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\LockScreenLogo.scale-200.png">
+      <PackagePath>Images\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\SplashScreen.scale-400.png">
+      <PackagePath>Images\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square150x150Logo.scale-100.png">
+      <PackagePath>Images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square150x150Logo.scale-125.png">
+      <PackagePath>Images\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square150x150Logo.scale-150.png">
+      <PackagePath>Images\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square150x150Logo.scale-200.png">
+      <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square150x150Logo.scale-400.png">
+      <PackagePath>Images\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.scale-100.png">
+      <PackagePath>Images\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.scale-125.png">
+      <PackagePath>Images\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.scale-150.png">
+      <PackagePath>Images\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.scale-200.png">
+      <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.scale-400.png">
+      <PackagePath>Images\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\StoreLogo.scale-100.png">
+      <PackagePath>Images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\StoreLogo.scale-125.png">
+      <PackagePath>Images\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\StoreLogo.scale-150.png">
+      <PackagePath>Images\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\StoreLogo.scale-200.png">
+      <PackagePath>Images\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\StoreLogo.scale-400.png">
+      <PackagePath>Images\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Wide310x150Logo.scale-100.png">
+      <PackagePath>Images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Wide310x150Logo.scale-125.png">
+      <PackagePath>Images\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Wide310x150Logo.scale-150.png">
+      <PackagePath>Images\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Wide310x150Logo.scale-200.png">
+      <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\Images\Wide310x150Logo.scale-400.png">
+      <PackagePath>Images\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM %28Package%29\bin\x64\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.web.webview2\1.0.2651.64\runtimes\win-x64\native_uap\Microsoft.Web.WebView2.Core.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.Web.WebView2.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\communitytoolkit.common\8.2.1\lib\net6.0\CommunityToolkit.Common.dll">
+      <PackagePath>Agropecuaria CM\CommunityToolkit.Common.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\communitytoolkit.winui.animations\8.2.250402\lib\net8.0-windows10.0.19041\CommunityToolkit.WinUI.Animations.dll">
+      <PackagePath>Agropecuaria CM\CommunityToolkit.WinUI.Animations.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\communitytoolkit.winui.extensions\8.2.250402\lib\net8.0-windows10.0.19041\CommunityToolkit.WinUI.Extensions.dll">
+      <PackagePath>Agropecuaria CM\CommunityToolkit.WinUI.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\entityframework\6.4.4\lib\netstandard2.1\EntityFramework.SqlServer.dll">
+      <PackagePath>Agropecuaria CM\EntityFramework.SqlServer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\entityframework\6.4.4\lib\netstandard2.1\EntityFramework.dll">
+      <PackagePath>Agropecuaria CM\EntityFramework.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\firebaseauthentication.net\4.1.0\lib\netstandard2.0\Firebase.Auth.dll">
+      <PackagePath>Agropecuaria CM\Firebase.Auth.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.data.sqlite.core\8.0.8\lib\net8.0\Microsoft.Data.Sqlite.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.Data.Sqlite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.win32.systemevents\8.0.0\lib\net8.0\Microsoft.Win32.SystemEvents.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.Win32.SystemEvents.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\lib\net6.0-windows10.0.18362.0\Microsoft.WinUI.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.WinUI.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppLifecycle.Projection.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.Windows.AppLifecycle.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppNotifications.Builder.Projection.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.Windows.AppNotifications.Builder.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppNotifications.Projection.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.Windows.AppNotifications.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.Resources.Projection.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.Windows.ApplicationModel.Resources.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Management.Deployment.Projection.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.Windows.Management.Deployment.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.PushNotifications.Projection.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.Windows.PushNotifications.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Security.AccessControl.Projection.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.Windows.Security.AccessControl.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Storage.Projection.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.Windows.Storage.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.System.Power.Projection.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.Windows.System.Power.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.System.Projection.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.Windows.System.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Widgets.Projection.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.Windows.Widgets.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\newtonsoft.json\13.0.2\lib\net6.0\Newtonsoft.Json.dll">
+      <PackagePath>Agropecuaria CM\Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.bundle_e_sqlite3\2.1.6\lib\netstandard2.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>Agropecuaria CM\SQLitePCLRaw.batteries_v2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.core\2.1.6\lib\netstandard2.0\SQLitePCLRaw.core.dll">
+      <PackagePath>Agropecuaria CM\SQLitePCLRaw.core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.1.6\lib\net6.0-windows7.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>Agropecuaria CM\SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.119\lib\netstandard2.1\System.Data.SQLite.dll">
+      <PackagePath>Agropecuaria CM\System.Data.SQLite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\system.codedom\4.7.0\lib\netstandard2.0\System.CodeDom.dll">
+      <PackagePath>Agropecuaria CM\System.CodeDom.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\system.configuration.configurationmanager\4.7.0\lib\netstandard2.0\System.Configuration.ConfigurationManager.dll">
+      <PackagePath>Agropecuaria CM\System.Configuration.ConfigurationManager.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\system.data.sqlclient\4.8.1\lib\netcoreapp2.1\System.Data.SqlClient.dll">
+      <PackagePath>Agropecuaria CM\System.Data.SqlClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\system.data.sqlite.ef6\1.0.119\lib\netstandard2.1\System.Data.SQLite.EF6.dll">
+      <PackagePath>Agropecuaria CM\System.Data.SQLite.EF6.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\system.drawing.common\8.0.8\lib\net8.0\System.Drawing.Common.dll">
+      <PackagePath>Agropecuaria CM\System.Drawing.Common.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\system.security.cryptography.protecteddata\4.7.0\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll">
+      <PackagePath>Agropecuaria CM\System.Security.Cryptography.ProtectedData.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\system.security.permissions\4.7.0\lib\netcoreapp3.0\System.Security.Permissions.dll">
+      <PackagePath>Agropecuaria CM\System.Security.Permissions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\system.windows.extensions\4.7.0\lib\netcoreapp3.0\System.Windows.Extensions.dll">
+      <PackagePath>Agropecuaria CM\System.Windows.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.web.webview2\1.0.2651.64\runtimes\win-arm64\native\WebView2Loader.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win-arm64\native\WebView2Loader.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.web.webview2\1.0.2651.64\runtimes\win-x64\native\WebView2Loader.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win-x64\native\WebView2Loader.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.web.webview2\1.0.2651.64\runtimes\win-x86\native\WebView2Loader.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win-x86\native\WebView2Loader.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.win32.systemevents\8.0.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\runtimes\win-arm64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win-arm64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\runtimes\win-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\runtimes\win-x86\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win-x86\native\Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\4.4.0\runtimes\win-arm64\native\sni.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win-arm64\native\sni.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\runtime.win-x64.runtime.native.system.data.sqlclient.sni\4.4.0\runtimes\win-x64\native\sni.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win-x64\native\sni.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\runtime.win-x86.runtime.native.system.data.sqlclient.sni\4.4.0\runtimes\win-x86\native\sni.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win-x86\native\sni.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a">
+      <PackagePath>Agropecuaria CM\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\linux-arm\native\libe_sqlite3.so">
+      <PackagePath>Agropecuaria CM\runtimes\linux-arm\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\linux-arm64\native\libe_sqlite3.so">
+      <PackagePath>Agropecuaria CM\runtimes\linux-arm64\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\linux-armel\native\libe_sqlite3.so">
+      <PackagePath>Agropecuaria CM\runtimes\linux-armel\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\linux-mips64\native\libe_sqlite3.so">
+      <PackagePath>Agropecuaria CM\runtimes\linux-mips64\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\linux-musl-arm\native\libe_sqlite3.so">
+      <PackagePath>Agropecuaria CM\runtimes\linux-musl-arm\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\linux-musl-arm64\native\libe_sqlite3.so">
+      <PackagePath>Agropecuaria CM\runtimes\linux-musl-arm64\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\linux-musl-x64\native\libe_sqlite3.so">
+      <PackagePath>Agropecuaria CM\runtimes\linux-musl-x64\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\linux-ppc64le\native\libe_sqlite3.so">
+      <PackagePath>Agropecuaria CM\runtimes\linux-ppc64le\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\linux-s390x\native\libe_sqlite3.so">
+      <PackagePath>Agropecuaria CM\runtimes\linux-s390x\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\linux-x64\native\libe_sqlite3.so">
+      <PackagePath>Agropecuaria CM\runtimes\linux-x64\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\linux-x86\native\libe_sqlite3.so">
+      <PackagePath>Agropecuaria CM\runtimes\linux-x86\native\libe_sqlite3.so</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib">
+      <PackagePath>Agropecuaria CM\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib">
+      <PackagePath>Agropecuaria CM\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\osx-arm64\native\libe_sqlite3.dylib">
+      <PackagePath>Agropecuaria CM\runtimes\osx-arm64\native\libe_sqlite3.dylib</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\osx-x64\native\libe_sqlite3.dylib">
+      <PackagePath>Agropecuaria CM\runtimes\osx-x64\native\libe_sqlite3.dylib</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\win-arm\native\e_sqlite3.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win-arm\native\e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\win-arm64\native\e_sqlite3.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win-arm64\native\e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\win-x64\native\e_sqlite3.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win-x64\native\e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\sqlitepclraw.lib.e_sqlite3\2.1.6\runtimes\win-x86\native\e_sqlite3.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win-x86\native\e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.119\runtimes\linux-x64\native\SQLite.Interop.dll">
+      <PackagePath>Agropecuaria CM\runtimes\linux-x64\native\SQLite.Interop.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.119\runtimes\osx-x64\native\SQLite.Interop.dll">
+      <PackagePath>Agropecuaria CM\runtimes\osx-x64\native\SQLite.Interop.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.119\runtimes\win-x64\native\SQLite.Interop.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win-x64\native\SQLite.Interop.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\stub.system.data.sqlite.core.netstandard\1.0.119\runtimes\win-x86\native\SQLite.Interop.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win-x86\native\SQLite.Interop.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\system.data.sqlclient\4.8.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll">
+      <PackagePath>Agropecuaria CM\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\system.data.sqlclient\4.8.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\system.security.cryptography.protecteddata\4.7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\system.windows.extensions\4.7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll">
+      <PackagePath>Agropecuaria CM\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.Windows.SDK.NET.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\WinRT.Runtime.dll">
+      <PackagePath>Agropecuaria CM\WinRT.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\.nuget\packages\microsoft.web.webview2\1.0.2651.64\lib_manual\net6.0-windows10.0.17763.0\Microsoft.Web.WebView2.Core.Projection.dll">
+      <PackagePath>Agropecuaria CM\Microsoft.Web.WebView2.Core.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\Agropecuaria CM.deps.json">
+      <PackagePath>Agropecuaria CM\Agropecuaria CM.deps.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\obj\x64\Debug\net8.0-windows10.0.19041.0\App.xbf">
+      <PackagePath>Agropecuaria CM\App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\obj\x64\Debug\net8.0-windows10.0.19041.0\BarcodePage1.xbf">
+      <PackagePath>Agropecuaria CM\BarcodePage1.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\obj\x64\Debug\net8.0-windows10.0.19041.0\ConfigPage9.xbf">
+      <PackagePath>Agropecuaria CM\ConfigPage9.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\obj\x64\Debug\net8.0-windows10.0.19041.0\DashPage7.xbf">
+      <PackagePath>Agropecuaria CM\DashPage7.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\obj\x64\Debug\net8.0-windows10.0.19041.0\FactPage6.xbf">
+      <PackagePath>Agropecuaria CM\FactPage6.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\obj\x64\Debug\net8.0-windows10.0.19041.0\InvPage2.xbf">
+      <PackagePath>Agropecuaria CM\InvPage2.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\obj\x64\Debug\net8.0-windows10.0.19041.0\LoginPage.xbf">
+      <PackagePath>Agropecuaria CM\LoginPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\obj\x64\Debug\net8.0-windows10.0.19041.0\MainWindow.xbf">
+      <PackagePath>Agropecuaria CM\MainWindow.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\obj\x64\Debug\net8.0-windows10.0.19041.0\NitPage4.xbf">
+      <PackagePath>Agropecuaria CM\NitPage4.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\obj\x64\Debug\net8.0-windows10.0.19041.0\NotifiPage8.xbf">
+      <PackagePath>Agropecuaria CM\NotifiPage8.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\obj\x64\Debug\net8.0-windows10.0.19041.0\ProductDetailPage.xbf">
+      <PackagePath>Agropecuaria CM\ProductDetailPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\obj\x64\Debug\net8.0-windows10.0.19041.0\ProductListPage.xbf">
+      <PackagePath>Agropecuaria CM\ProductListPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\obj\x64\Debug\net8.0-windows10.0.19041.0\PurPage3.xbf">
+      <PackagePath>Agropecuaria CM\PurPage3.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\obj\x64\Debug\net8.0-windows10.0.19041.0\ShellPage.xbf">
+      <PackagePath>Agropecuaria CM\ShellPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\obj\x64\Debug\net8.0-windows10.0.19041.0\SinPermisosPage10.xbf">
+      <PackagePath>Agropecuaria CM\SinPermisosPage10.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\obj\x64\Debug\net8.0-windows10.0.19041.0\Styles.xbf">
+      <PackagePath>Agropecuaria CM\Styles.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\obj\x64\Debug\net8.0-windows10.0.19041.0\VentasPage5.xbf">
+      <PackagePath>Agropecuaria CM\VentasPage5.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\Assets\Agropecuaria CM_.png">
+      <PackagePath>Agropecuaria CM\Assets\Agropecuaria CM_.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\Assets\candadodefinitivo.png">
+      <PackagePath>Agropecuaria CM\Assets\candadodefinitivo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\Assets\LOGO-AgrocomercialMendoza.jpg">
+      <PackagePath>Agropecuaria CM\Assets\LOGO-AgrocomercialMendoza.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\Assets\logotipo.png">
+      <PackagePath>Agropecuaria CM\Assets\logotipo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\obj\x64\Debug\net8.0-windows10.0.19041.0\apphost.exe">
+      <PackagePath>Agropecuaria CM\Agropecuaria CM.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\Agropecuaria CM.runtimeconfig.json">
+      <PackagePath>Agropecuaria CM\Agropecuaria CM.runtimeconfig.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM\bin\x64\Debug\net8.0-windows10.0.19041.0\Agropecuaria CM.dll">
+      <PackagePath>Agropecuaria CM\Agropecuaria CM.dll</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.6.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.6</Name>
+      <Version>6000.373.1641.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.6, MinVersion = 6000.373.1641.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.6.msix</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.6.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.6</Name>
+      <Version>6000.373.1641.0</Version>
+      <Architecture>win32</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.6, MinVersion = 6000.373.1641.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.6.msix</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\buildTransitive\..\tools\MSIX\win10-x64\Microsoft.WindowsAppRuntime.1.6.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.6</Name>
+      <Version>6000.373.1641.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.6, MinVersion = 6000.373.1641.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\buildTransitive\..\tools\MSIX\win10-x64\Microsoft.WindowsAppRuntime.1.6.msix</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\buildTransitive\..\tools\MSIX\win10-arm64\Microsoft.WindowsAppRuntime.1.6.msix">
+      <Name>Microsoft.WindowsAppRuntime.1.6</Name>
+      <Version>6000.373.1641.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.WindowsAppRuntime.1.6, MinVersion = 6000.373.1641.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\matza\.nuget\packages\microsoft.windowsappsdk\1.6.250108002\buildTransitive\..\tools\MSIX\win10-arm64\Microsoft.WindowsAppRuntime.1.6.msix</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug.UWPDesktop</Name>
+      <Version>14.0.33728.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug.UWPDesktop, MinVersion = 14.0.33728.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.Desktop.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug.UWPDesktop</Name>
+      <Version>14.0.33728.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug.UWPDesktop, MinVersion = 14.0.33728.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.Desktop\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.Desktop.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.33519.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.33519.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.33519.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.33519.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.33519.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.33519.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

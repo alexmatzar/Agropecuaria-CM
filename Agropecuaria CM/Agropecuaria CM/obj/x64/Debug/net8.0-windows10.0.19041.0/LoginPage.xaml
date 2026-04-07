@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Agropecuaria_CM.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Agropecuaria_CM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource AcrylicBackgroundFillColorBaseBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ProgressBar x:ConnectionId='2' x:Name="LoginProgressBar" Grid.Row="0" Height="4" Visibility="Collapsed" IsIndeterminate="True" ShowPaused="False" ShowError="False" Foreground="{ThemeResource SystemAccentColor}"/>
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel CornerRadius="15" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,15" Background="{ThemeResource AccentTextFillColorDisabled}">
+                <Image Source="Assets/logotipo.png" Height="200" Width="200"/>
+            </StackPanel>
+            <TextBox x:ConnectionId='3' x:Name="EmailTextBox" PlaceholderText="Correo" Width="200" />
+            <PasswordBox x:ConnectionId='4' x:Name="PasswordBox" PlaceholderText="Contraseña" Width="200" Margin="0,10,0,0"/>
+            <Button x:ConnectionId='5' Content="Iniciar Sesión"                           Width="200" Margin="0,10,0,10"/>
+            <Button x:ConnectionId='6' Content="¿Olvidaste tu contraseña?" FontStyle="Italic" BorderBrush="Transparent" FontSize="13" Background="Transparent" HorizontalAlignment="Center"                                   />
+        </StackPanel>
+    </Grid>
+</Page>
+

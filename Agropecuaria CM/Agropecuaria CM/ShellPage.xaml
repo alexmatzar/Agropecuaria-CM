@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Agropecuaria_CM.ShellPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Agropecuaria_CM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <NavigationView x:Name="nvSample" 
+                        Grid.Row="1" 
+                        OpenPaneLength="72" 
+                        SelectionChanged="NavigationView_SelectionChanged" 
+                        PaneDisplayMode="Left" 
+                        IsBackButtonVisible="Collapsed" 
+                        IsSettingsVisible="False" 
+                        IsPaneOpen="True" 
+                        IsPaneToggleButtonVisible="False">
+
+            <NavigationView.MenuItems>
+
+                <NavigationViewItem Tag="Subpagina1" x:Name="SamplePage1Item" Style="{StaticResource StoreItemStyle}">
+                    <NavigationViewItem.Content>
+                        <Grid HorizontalAlignment="Stretch">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <FontIcon Grid.Row="0" Glyph="&#xEE6F;" FontSize="20" HorizontalAlignment="Center" Margin="0,0,0,2"/>
+                            <TextBlock Grid.Row="1" Text="Cobro" FontSize="10" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="NoWrap"/>
+                        </Grid>
+                    </NavigationViewItem.Content>
+                </NavigationViewItem>
+
+                <NavigationViewItem Tag="Subpagina2" x:Name="SamplePage2Item" Style="{StaticResource StoreItemStyle}">
+                    <NavigationViewItem.Content>
+                        <Grid HorizontalAlignment="Stretch">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <FontIcon Grid.Row="0" Glyph="&#xE9D5;" FontSize="20" HorizontalAlignment="Center" Margin="0,0,0,2"/>
+                            <TextBlock Grid.Row="1" Text="Inventario" FontSize="10" LineHeight="10" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap" MaxLines="2"/>
+                        </Grid>
+                    </NavigationViewItem.Content>
+                </NavigationViewItem>
+
+                <NavigationViewItemSeparator Margin="10,0,10,0"/>
+
+                <NavigationViewItem Tag="Subpagina3" x:Name="SamplePage3Item" Style="{StaticResource StoreItemStyle}">
+                    <NavigationViewItem.Content>
+                        <Grid HorizontalAlignment="Stretch">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <FontIcon Grid.Row="0" Glyph="&#xF158;" FontSize="20" HorizontalAlignment="Center" Margin="0,0,0,2"/>
+                            <TextBlock Grid.Row="1" Text="Admin" FontSize="10" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="NoWrap"/>
+                        </Grid>
+                    </NavigationViewItem.Content>
+                </NavigationViewItem>
+
+                <NavigationViewItem Tag="Subpagina4" x:Name="SamplePage4Item" Style="{StaticResource StoreItemStyle}">
+                    <NavigationViewItem.Content>
+                        <Grid HorizontalAlignment="Stretch">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <FontIcon Grid.Row="0" Glyph="&#xE716;" FontSize="20" HorizontalAlignment="Center" Margin="0,0,0,2"/>
+                            <TextBlock Grid.Row="1" Text="Clientes" FontSize="10" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="NoWrap"/>
+                        </Grid>
+                    </NavigationViewItem.Content>
+                </NavigationViewItem>
+
+                <NavigationViewItem Tag="Subpagina5" x:Name="SamplePage5Item" Style="{StaticResource StoreItemStyle}">
+                    <NavigationViewItem.Content>
+                        <Grid HorizontalAlignment="Stretch">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <FontIcon Grid.Row="0" Glyph="&#xE777;" FontSize="20" HorizontalAlignment="Center" Margin="0,0,0,2"/>
+                            <TextBlock Grid.Row="1" Text="Ventas" FontSize="10" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="NoWrap"/>
+                        </Grid>
+                    </NavigationViewItem.Content>
+                </NavigationViewItem>
+
+                <NavigationViewItem Tag="Subpagina6" x:Name="SamplePage6Item" Style="{StaticResource StoreItemStyle}">
+                    <NavigationViewItem.Content>
+                        <Grid HorizontalAlignment="Stretch">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <FontIcon Grid.Row="0" Glyph="&#xE8A5;" FontSize="20" HorizontalAlignment="Center" Margin="0,0,0,2"/>
+                            <TextBlock Grid.Row="1" Text="Recibo" FontSize="10" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="NoWrap"/>
+                        </Grid>
+                    </NavigationViewItem.Content>
+                </NavigationViewItem>
+
+                <NavigationViewItem Tag="Subpagina7" x:Name="SamplePage7Item" Style="{StaticResource StoreItemStyle}">
+                    <NavigationViewItem.Content>
+                        <Grid HorizontalAlignment="Stretch">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <FontIcon Grid.Row="0" Glyph="&#xEAFC;" FontSize="20" HorizontalAlignment="Center" Margin="0,0,0,2"/>
+                            <TextBlock Grid.Row="1" Text="Estadísticas" FontSize="10" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="NoWrap"/>
+                        </Grid>
+                    </NavigationViewItem.Content>
+                </NavigationViewItem>
+
+                <NavigationViewItemSeparator Margin="10,0,10,0"/>
+
+                <NavigationViewItem Tag="Subpagina8" x:Name="SamplePage8Item" Style="{StaticResource StoreItemStyle}">
+                    <NavigationViewItem.Content>
+                        <Grid HorizontalAlignment="Stretch">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" HorizontalAlignment="Center">
+                                <FontIcon Glyph="&#xE715;" FontSize="20"/>
+                                <InfoBadge x:Name="infoBadge1" Value="5" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="-12,-8,-12,0"/>
+                            </Grid>
+                            <TextBlock Grid.Row="1" Text="Avisos" FontSize="10" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="NoWrap" Margin="0,4,0,0"/>
+                        </Grid>
+                    </NavigationViewItem.Content>
+                </NavigationViewItem>
+
+            </NavigationView.MenuItems>
+
+            <NavigationView.FooterMenuItems>
+                <NavigationViewItem Tag="Subpagina9" x:Name="SamplePage9Item" Style="{StaticResource StoreItemStyle}">
+                    <NavigationViewItem.Content>
+                        <Grid HorizontalAlignment="Stretch">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <FontIcon Grid.Row="0" Glyph="&#xE713;" FontSize="20" HorizontalAlignment="Center" Margin="0,0,0,2"/>
+                            <TextBlock Grid.Row="1" Text="Ajustes" FontSize="10" HorizontalAlignment="Center" TextAlignment="Center" TextWrapping="NoWrap"/>
+                        </Grid>
+                    </NavigationViewItem.Content>
+                </NavigationViewItem>
+            </NavigationView.FooterMenuItems>
+
+            <Frame x:Name="contentFrame"/>
+        </NavigationView>
+    </Grid>
+</Page>

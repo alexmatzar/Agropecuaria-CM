@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Agropecuaria_CM.PurPage3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Agropecuaria_CM"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Transparent">
+
+    <ScrollViewer>
+        <Grid Margin="10" RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Text="Administración De Productos" FontSize="20" FontWeight="Bold"/>
+            <Grid Grid.Row="1" CornerRadius="15" Padding="10" ColumnSpacing="5" HorizontalAlignment="Center" Background="{ThemeResource AcrylicBackgroundFillColorBaseBrush}">
+                <StackPanel x:Name="stack1" Padding="10" CornerRadius="15">
+                    <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Spacing="10" Margin="0,0,0,10">
+                        <FontIcon Glyph="&#xED11;" Foreground="{ThemeResource SystemControlHighlightAccentBrush}"/>
+                        <TextBlock Text="¡Añadamos nuevos productos!" FontWeight="ExtraLight"/>
+                    </StackPanel>
+                    <Expander Header="Añadir un nuevo producto" IsExpanded="False" Padding="15" CornerRadius="15" HorizontalAlignment="Center" MinWidth="730">
+                        <StackPanel Spacing="15">
+                            <TextBlock Text="Registrar Producto" FontWeight="Bold" Margin="0,0,0,10"/>
+
+                            <TextBlock Text="Ingrese el código de barras:"/>
+                            <TextBlock Text="*Registrar productos cuyos códigos de barras sean de 12 y 13 dígitos." FontStyle="Italic"/>
+                            <TextBox x:Name="TextBEsc" PlaceholderText="Por favor, escanee..." FontSize="20" Width="200" HorizontalAlignment="Left" Margin="0,0,0,10" TextChanging="TextBEsc_TextChanging" MaxLength="13"/>
+
+                            <TextBlock Text="Información del producto:" FontSize="15" FontWeight="ExtraLight"/>
+
+                            <TextBlock Text="Tipo del producto:" FontWeight="ExtraLight"/>
+                            <TextBox x:Name="ProductTypeTextBox" HorizontalAlignment="Left" PlaceholderText="Tipo..." MaxLength="15" TextChanging="TextVA_TextChanging"/>
+
+                            <TextBlock Text="Marca del producto:" FontWeight="ExtraLight"/>
+                            <TextBox x:Name="ProductBrandTextBox" HorizontalAlignment="Left" PlaceholderText="Marca..." MaxLength="15" TextChanging="TextVA_TextChanging"/>
+
+                            <TextBlock Text="Descripción del producto:" FontWeight="ExtraLight"/>
+                            <TextBox x:Name="ProductDescriptionTextBox" HorizontalAlignment="Left" PlaceholderText="Descripción..." AutomationProperties.Name="multi-line TextBox" TextWrapping="Wrap" AcceptsReturn="True" MinWidth="300" TextChanging="TextVA_TextChanging"/>
+
+                            <TextBlock Text="Seleccione la unidad de medida comprada:" FontWeight="ExtraLight"/>
+                            <ComboBox x:Name="UnidadCompradaComboBox" PlaceholderText="Seleccione la unidad comprada del producto" SelectionChanged="UnidadCompradaComboBox_SelectionChanged">
+                                <ComboBoxItem Content="Unidad(es)" />
+                                <ComboBoxItem Content="Libra(s)" />
+                                <ComboBoxItem Content="Ciento(s)" />
+                                <ComboBoxItem Content="Quintal(es)" />
+                            </ComboBox>
+
+                            <TextBlock Text="Cantidad en stock:" FontWeight="ExtraLight"/>
+                            <TextBlock Text="*Desde 1 unidad hasta 9999." FontStyle="Italic"/>
+                            <NumberBox x:Name="ProductStockNB" IsEnabled="False" HorizontalAlignment="Left" PlaceholderText="Cantidad en stock" Margin="0,0,0,10" Minimum="1" Maximum="9999" SpinButtonPlacementMode="Inline" SmallChange="10" LargeChange="100"/>
+                            <TextBlock Text="Precio COMPRA del producto: Q." FontWeight="ExtraLight"/>
+                            <NumberBox x:Name="ProductPriceCompraNumberBox" IsEnabled="False" HorizontalAlignment="Left" PlaceholderText="0.0" Margin="0,0,0,10" Minimum="0.01" Maximum="9999"/>
+
+                            <Rectangle Height="1" Fill="{ThemeResource SystemControlForegroundBaseLowBrush}" Margin="0,10"/>
+
+                            <TextBlock Text="Precios de Venta (Generado Automáticamente):" FontWeight="Bold" Margin="0,0,0,5"/>
+                            <TextBlock Text="*El sistema ha detectado estas unidades compatibles. Ingrese el precio unitario manualmente." 
+                                FontStyle="Italic" FontSize="12" Foreground="Gray" Margin="0,0,0,10"/>
+
+                            <StackPanel x:Name="SellingCardsContainer" Orientation="Horizontal" Spacing="15" Margin="0,0,0,20"/>
+
+                            <TextBlock Text="Fotografía del producto (Opcional):" FontWeight="ExtraLight" Margin="0,10,0,0"/>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Button x:Name="PhotoUploadButton" 
+                                    Grid.Column="0"
+                                    Width="150" 
+                                    Height="150" 
+                                    CornerRadius="10" 
+                                    Background="{ThemeResource LayerOnAccentAcrylicFillColorDefault}"
+                                    BorderBrush="{ThemeResource AccentAAFillColorDefaultBrush}"
+                                    BorderThickness="1"
+                                    AllowDrop="True"
+                                    Click="PhotoUploadButton_Click"
+                                    DragOver="PhotoUploadButton_DragOver"
+                                    Drop="PhotoUploadButton_Drop">
+                                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                        <FontIcon Glyph="&#xE722;" FontSize="40" Foreground="{ThemeResource SystemControlHighlightAccentBrush}"/>
+                                        <TextBlock Text="Clic o arrastra aquí" FontSize="12" Margin="0,10,0,0" TextWrapping="Wrap" TextAlignment="Center"/>
+                                    </StackPanel>
+                                </Button>
+
+                                <StackPanel Grid.Column="1" Margin="20,0,0,0" VerticalAlignment="Center" x:Name="PhotoPreviewPanel" Visibility="Collapsed">
+                                    <Image x:Name="ProductImagePreview" Width="150" Height="150" Stretch="Uniform" HorizontalAlignment="Left"/>
+                                    <Button Content="Quitar foto" Margin="0,10,0,0" Click="RemovePhoto_Click"/>
+                                </StackPanel>
+                            </Grid>
+
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="10">
+                                <Button Content="Cancelar" Width="100" Height="40" Click="OnCancelClick"/>
+                                <Button Style="{StaticResource AccentButtonStyle}" Content="Añadir producto" BorderThickness="1" BorderBrush="{StaticResource SystemChromeWhiteColor}" Width="160" Height="40" Click="OnAddProductClick_Click"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Expander>
+                </StackPanel>
+            </Grid>
+            <StackPanel x:Name="StackPFilters" Grid.Row="2" HorizontalAlignment="Center" Background="{ThemeResource AcrylicBackgroundFillColorBaseBrush}" CornerRadius="15" Padding="15" Spacing="10">
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Spacing="10">
+                    <FontIcon Glyph="&#xE773;" Foreground="{ThemeResource SystemControlHighlightAccentBrush}"/>
+                    <TextBlock Text="¿Buscas un producto?"/>
+                </StackPanel>
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" Height="50">
+                    <Grid HorizontalAlignment="Center" ColumnSpacing="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBox x:Name="FilterByBarcode" Grid.Column="0" Height="20" HorizontalAlignment="Left" PlaceholderText="Filtrar por código de barras" TextChanged="OnFilterChanged" PlaceholderForeground="{ThemeResource AccentAAFillColorDefaultBrush}" Width="240"/>
+                        <TextBox x:Name="FilterByType" Grid.Column="1" Height="20" HorizontalAlignment="Left" PlaceholderText="Filtrar por tipo" TextChanged="OnFilterChanged" PlaceholderForeground="{ThemeResource AccentAAFillColorDefaultBrush}" Width="240"/>
+                        <TextBox x:Name="FilterByBrand" Grid.Column="2" Height="20" HorizontalAlignment="Left" PlaceholderText="Filtrar por marca" TextChanged="OnFilterChanged" PlaceholderForeground="{ThemeResource AccentAAFillColorDefaultBrush}" Width="240"/>
+                        <TextBox x:Name="FilterByUC" Grid.Column="3" Height="20" HorizontalAlignment="Left" PlaceholderText="Filtar por U o Unidad(es), etc." TextChanged="OnFilterChanged" PlaceholderForeground="{ThemeResource AccentAAFillColorDefaultBrush}" Width="240"/>
+                    </Grid>
+                </ScrollViewer>
+            </StackPanel>
+            <TextBlock x:Name="NoProductsTextBlock" Grid.Row="3" Text="No hay productos, agregue nuevos productos." 
+            FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top"
+            Visibility="Collapsed" Margin="0,10,0,0"/>
+
+            <Grid x:Name="StackPList" Grid.Row="3" Background="{ThemeResource AcrylicBackgroundFillColorBaseBrush}" CornerRadius="15" Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" HorizontalAlignment="Left" Orientation="Horizontal" Spacing="10" Margin="5,0,0,8">
+                    <FontIcon Glyph="&#xF0E4;" Foreground="{ThemeResource SystemControlHighlightAccentBrush}"/>
+                    <TextBlock Text="Productos registrados" FontSize="20" FontWeight="Bold"/>
+                </StackPanel>
+                <ListView x:Name="StockList" Grid.Row="1" Height="290" CornerRadius="10" Padding="5" Background="{ThemeResource LayerOnAccentAcrylicFillColorDefault}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ScrollViewer VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto">
+                                <Grid Margin="2" ColumnSpacing="3" Padding="15" CornerRadius="15" Background="{ThemeResource AcrylicBackgroundFillColorBaseBrush}">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0" Padding="8" VerticalAlignment="Center" CornerRadius="15" BorderThickness="2" BorderBrush="{ThemeResource AccentAAFillColorDisabledBrush}">
+                                        <TextBlock Text="{Binding ProductName}" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="ExtraLight" TextWrapping="Wrap"/>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="1" Width="133" Padding="15" Spacing="3" VerticalAlignment="Center">
+                                        <TextBlock Text="Tipo" HorizontalAlignment="Center" FontStyle="Italic"/>
+                                        <TextBlock Text="{Binding ProductType}" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" FontWeight="ExtraLight"/>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="2" Width="130" Padding="15" Spacing="3" VerticalAlignment="Center">
+                                        <TextBlock Text="Marca" FontStyle="Italic" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="{Binding ProductBrand}" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="ExtraLight" TextWrapping="Wrap"/>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="3" Orientation="Vertical" Spacing="5" Width="130" Padding="15" VerticalAlignment="Center">
+                                        <TextBlock Text="Descripción" FontStyle="Italic" HorizontalAlignment="Center"/>
+                                        <Button VerticalAlignment="Center" HorizontalAlignment="Center">
+                                            <FontIcon Glyph="&#xEA37;" />
+                                            <Button.Flyout>
+                                                <Flyout>
+                                                    <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                                        <TextBlock TextWrapping="WrapWholeWords" Text="{Binding ProductDescription}" MaxWidth="400"/>
+                                                    </ScrollViewer>
+                                                </Flyout>
+                                            </Button.Flyout>
+                                        </Button>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="4" Padding="15" Spacing="3" VerticalAlignment="Center" CornerRadius="15" BorderThickness="1.5" BorderBrush="{ThemeResource AccentAAFillColorDisabledBrush}">
+                                        <TextBlock Text="Existencias" FontStyle="Italic" HorizontalAlignment="Center"/>
+                                        <StackPanel Orientation="Horizontal" Spacing="3" HorizontalAlignment="Center">
+                                            <TextBlock Text="{Binding ProductStock}" FontSize="18" FontWeight="Bold"/>
+                                            <TextBlock Text="{Binding ProductUnidadComprada}" FontWeight="ExtraLight" FontSize="12" VerticalAlignment="Center" TextWrapping="Wrap"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="5" Padding="15" Spacing="3" VerticalAlignment="Center" CornerRadius="15" BorderThickness="1.5" BorderBrush="{ThemeResource AccentAAFillColorDisabledBrush}">
+                                        <TextBlock Text="Precio Compra" FontStyle="Italic" HorizontalAlignment="Center"/>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                            <TextBlock Text="Q" FontWeight="Bold" FontSize="16"/>
+                                            <TextBlock Text="{Binding ProductPriceCompra}" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="6" Padding="15" Spacing="3" VerticalAlignment="Center" CornerRadius="15" BorderThickness="1.5" Background="{ThemeResource AccentAcrylicBackgroundFillColorBaseBrush}" BorderBrush="{ThemeResource ButtonBorderThemeBrush}">
+                                        <TextBlock Text="Capital" FontStyle="Italic" HorizontalAlignment="Center"/>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                            <TextBlock Text="Q" FontWeight="Bold" FontSize="16"/>
+                                            <TextBlock Text="{Binding ProductCapital}" FontWeight="Bold" FontSize="16"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="7" Padding="10" Spacing="1" VerticalAlignment="Center" CornerRadius="15" BorderThickness="1.5" BorderBrush="{ThemeResource AccentAAFillColorDisabledBrush}">
+                                        <TextBlock Text="Precios Venta" FontStyle="Italic" HorizontalAlignment="Center"/>
+                                        <ListView ItemsSource="{Binding UnitSales}" Background="Transparent" Padding="5">
+                                            <ListView.ItemTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel Orientation="Horizontal" Spacing="3">
+                                                        <TextBlock Text="{Binding Unit}" FontWeight="Bold" HorizontalAlignment="Left"/>
+                                                        <TextBlock Text="Q" FontWeight="Bold"/>
+                                                        <TextBlock Text="{Binding Price}" FontWeight="Bold"/>
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </ListView.ItemTemplate>
+                                        </ListView>
+                                    </StackPanel>
+                                    <Button Grid.Column="8" HorizontalAlignment="Center" VerticalAlignment="Center" DataContext="{Binding}">
+                                        <FontIcon Glyph="&#xE712;" />
+                                        <Button.Flyout>
+                                            <MenuFlyout>
+                                                <MenuFlyoutItem Text="Editar" x:Name="EditButton" Click="OnEditButtonClick">
+                                                    <MenuFlyoutItem.Icon>
+                                                        <FontIcon Glyph="&#xEB7E;"/>
+                                                    </MenuFlyoutItem.Icon>
+                                                </MenuFlyoutItem>
+                                                <MenuFlyoutItem Text="Eliminar" x:Name="DeleteButton" Click="OnDeleteButtonClick">
+                                                    <MenuFlyoutItem.Icon>
+                                                        <FontIcon Glyph="&#xE74D;"/>
+                                                    </MenuFlyoutItem.Icon>
+                                                </MenuFlyoutItem>
+                                            </MenuFlyout>
+                                        </Button.Flyout>
+                                    </Button>
+                                </Grid>
+                            </ScrollViewer>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <TextBlock x:Name="NoMatchesTextBlock" Grid.Row="1" Text="Sin coincidencias" FontSize="24" FontWeight="Bold" Foreground="{ThemeResource SystemControlHighlightAccentBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed" Margin="100" />
+                <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="40" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock x:Name="TotalProductosUnidadTextBlock" FontSize="20" FontWeight="ExtraLight" Margin="0,20,0,0" Text="Productos por Unidad: 0"/>
+                    <TextBlock x:Name="TotalProductosLibraTextBlock" FontSize="20" FontWeight="ExtraLight" Margin="0,20,0,0" Text="Por Libra: 0"/>
+                    <TextBlock x:Name="TotalProductosCientoTextBlock" FontSize="20" FontWeight="ExtraLight" Margin="0,20,0,0" Text="Por Ciento: 0"/>
+                    <TextBlock x:Name="TotalProductosQuintalTextBlock" FontSize="20" FontWeight="ExtraLight" Margin="0,20,0,0" Text="Por Quintal: 0"/>
+                    <TextBlock x:Name="TotalProductosTotalTextBlock" FontSize="20" FontWeight="ExtraLight" Margin="0,20,0,0" Text="Total: 0"/>
+                    <TextBlock x:Name="TotalCapitalTextBlock" FontSize="21" FontWeight="Bold" Margin="0,20,0,0" Text="Capital Total: Q. 0.00"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</Page>

@@ -1,0 +1,134 @@
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Assets\candadodefinitivo.png
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Assets\LOGO-AgrocomercialMendoza.jpg
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Assets\logotipo.png
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.Web.WebView2.Core.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\EntityFramework.SqlServer.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\EntityFramework.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Firebase.Auth.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.Data.Sqlite.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.Win32.SystemEvents.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.InteractiveExperiences.Projection.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.WinUI.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.Windows.AppLifecycle.Projection.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.Windows.AppNotifications.Builder.Projection.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.Windows.AppNotifications.Projection.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.Windows.ApplicationModel.Resources.Projection.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.Windows.Management.Deployment.Projection.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.Windows.PushNotifications.Projection.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.Windows.Security.AccessControl.Projection.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.Windows.Storage.Projection.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.Windows.System.Power.Projection.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.Windows.System.Projection.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.Windows.Widgets.Projection.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Newtonsoft.Json.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\SQLitePCLRaw.batteries_v2.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\SQLitePCLRaw.core.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\System.Data.SQLite.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\System.CodeDom.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\System.Configuration.ConfigurationManager.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\System.Data.SqlClient.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\System.Data.SQLite.EF6.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\System.Drawing.Common.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\System.Security.Cryptography.ProtectedData.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\System.Security.Permissions.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\System.Windows.Extensions.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win-arm64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win-x86\native\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win-arm64\native\sni.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win-x64\native\sni.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win-x86\native\sni.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\browser-wasm\nativeassets\net8.0\e_sqlite3.a
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\linux-x64\native\SQLite.Interop.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\osx-x64\native\SQLite.Interop.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win-x64\native\SQLite.Interop.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.Windows.SDK.NET.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\WinRT.Runtime.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Microsoft.Web.WebView2.Core.Projection.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Agropecuaria CM.deps.json
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\App.xbf
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\BarcodePage1.xbf
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\ConfigPage9.xbf
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\DashPage7.xbf
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\FactPage6.xbf
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\InvPage2.xbf
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\MainWindow.xbf
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\NitPage4.xbf
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\NotifiPage8.xbf
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\PurPage3.xbf
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\SinPermisosPage10.xbf
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\VentasPage5.xbf
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Assets\candadodefinitivo.png
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Assets\LOGO-AgrocomercialMendoza.jpg
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Assets\logotipo.png
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Agropecuaria CM.exe
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Agropecuaria CM.runtimeconfig.json
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Agropecuaria CM.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Agropecuaria CM.pdb
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\resources.pri
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\AppxManifest.xml
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM (Package).build.appxrecipe
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Microsoft.Web.WebView2.Core.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Microsoft.Web.WebView2.Core.Projection.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Microsoft.Web.WebView2.Core.winmd
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\Agropecuaria CM (Package).wapproj.AssemblyReference.cache
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\Agropecuaria CM (Package).wapproj.CoreCompileInputs.cache
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\Agropecu.D47F354F.Up2Date
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\Agropecuaria CM.pri.xml
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\priconfig.xml
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\priconfig.xml.intermediate
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\unfiltered.layout.resfiles
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\unfiltered.layout.resfiles.intermediate
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\filtered.layout.resfiles
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\filtered.layout.resfiles.intermediate
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\excluded.layout.resfiles
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\excluded.layout.resfiles.intermediate
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\resources.resfiles
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\resources.resfiles.intermediate
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\pri.resfiles
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\pri.resfiles.intermediate
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\qualifiers.txt
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\qualifiers.txt.intermediate
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\ProjectArchitectures.txt
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\obj\x64\Release\Agropecuaria CM (Package).wapproj.LastBuild.txt
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Assets\Agropecuaria CM_.png
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\Assets\Agropecuaria CM_.png
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\CommunityToolkit.Common.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\CommunityToolkit.WinUI.Animations.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\CommunityToolkit.WinUI.Extensions.dll
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\ProductDetailPage.xbf
+C:\Users\matza\source\repos\Agropecuaria CM\Agropecuaria CM\Agropecuaria CM (Package)\bin\x64\Release\Agropecuaria CM\ProductListPage.xbf
