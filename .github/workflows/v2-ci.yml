@@ -85,3 +85,5 @@ jobs:
             .artifacts/*.sha256
             .artifacts/vista-previa-wpf.png
           retention-days: 14
+          include-hidden-files: true
+          if-no-files-found: error
