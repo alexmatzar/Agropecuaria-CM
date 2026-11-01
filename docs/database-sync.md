@@ -178,7 +178,7 @@ En VS Code están disponibles Cloud.Api (PostgreSQL local + Firebase emulado), B
 
 ## Límites pendientes
 
-Proyecto Firebase real y despliegue, TLS y permisos Windows, KMS/cifrado en reposo del servicio administrado, imágenes, auditoría central de cuentas y conciliación de alta Firebase, copias/PITR ensayadas, reactivación segura de backups con pendientes y snapshots de restauración para historiales grandes.
+Proyecto Firebase real y despliegue, TLS y permisos Windows, KMS/cifrado en reposo del servicio administrado, imágenes, invitación de cuentas Firebase existentes, auditoría operativa completa, copias/PITR ensayadas, reactivación segura de backups con pendientes y snapshots de restauración para historiales grandes. La auditoría central de cuentas y el diario recuperable de altas Firebase ya están implementados y probados; ver [criterios de avance](backend-readiness.md).
 
 No hay aún edición remota de catálogo, compras, devoluciones, lotes, facturación, caja WPF o instalación/impresión Windows. PostgreSQL del contenedor es un entorno de desarrollo, sin promesa de alta disponibilidad o seguridad de producción.
 
