@@ -1,0 +1,27 @@
+# Desarrollo de Agropecuaria CM
+
+- Leer README.md y docs/architecture.md antes de cambiar límites de capas o sincronización.
+- Un repositorio, contratos HTTP compartidos y procesos de UI/servicio separados.
+- Domain no puede depender de Windows, HTTP, UI ni SQLite. Desktop.Wpf y Client no pueden abrir la base ni recibir su clave.
+- Una venta y su detalle, movimientos, resultado idempotente y outbox se confirman en una transacción local. No llamar a nube o impresora dentro de ella.
+- No usar double/float/REAL para existencias o dinero. Mantener unidades base, moneda y redondeo explícitos.
+- No eliminar pendientes para corregir errores ni marcar eventos entregados sin acuse persistido. No anunciar "exactly once".
+- El receptor de tools/ es exclusivamente de desarrollo. No publicarlo como backend de nube ni usar sus TenantId recibidos como autorización de producción.
+- No quitar el bloqueo Production hasta integrar y verificar cifrado, claves recuperables, autenticación de operadores y despliegue seguro.
+- No importar claves Firebase antiguas, usar datos reales en este prototipo ni versionar .data/, tokens, certificados privados o bases.
+- El original WinUI del commit 2ab3864 se conserva como referencia. Migrar funciones y datos de forma gradual, con copia y conciliación, nunca sobrescribir la base del cliente.
+- Verificar cambios relevantes con `bash scripts/check.sh`. Las pruebas usan datos temporales y procesos locales aislados.
+- WPF compila por targeting Windows desde Mac, pero ejecución, UX, servicio, ACL, instalador e impresión deben probarse en Windows.
+- Separar estado de nube, estado de servicio local y errores de autenticación. La falta de nube no bloquea operaciones locales mientras exista una sesión previamente validada y vigente.
+- Identidad vigente: ADR 003. Firebase Auth valida cuentas; la autoridad central guarda permisos por negocio/sucursal. Nunca volver a contraseñas locales como fallback de login.
+- Login/cambio de cuenta y administración requieren conexión. Una sesión ya validada opera con una concesión offline de hasta 24 horas; una caída no puede extenderla. Errores de proveedor no equivalen a revocación.
+- Firebase Admin SDK y credenciales PostgreSQL pertenecen solo al servidor de nube. La UI recibe un token local opaco, nunca refresh tokens, claves de base o credenciales administrativas Firebase.
+- Cloud:UseSqliteDevelopment y el emulador son adaptadores explícitos de prueba. La sincronización comercial debe probarse contra PostgreSQL real; no confundir pruebas locales con una nube desplegada. El servidor rechaza Production.
+- ADR 004 define una autoridad de inventario por sucursal, dispositivos revocables y feed por cursor. No reemplazar escritor automáticamente ni reactivar uno revocado; los pendientes del anterior deben conservarse para conciliación.
+- El pull confirma cursor e inbox junto con datos en una transacción y nunca genera outbox de regreso. Bloquear consulta de inventario parcial y escritura durante la restauración inicial.
+- SQL de nube: migraciones embebidas numeradas, hash verificado, transacción y lock de migración. No editar una migración aplicada; añadir una nueva.
+- El conversor legacy exige convención de stock e informe revisado. No adivinar unidades, redondear importes ambiguos o reconstruir ventas textuales como nuevas. Mantener origen intacto y publicar una copia cifrada nueva solo tras conciliar.
+- Las pruebas PostgreSQL usan esquemas temporales exclusivos y datos ficticios. Para integración HTTP completa ejecutar scripts/cloud-dev.sh test-postgres con PostgreSQL y Auth Emulator activos.
+- Altas cloud requieren OperationId y diario persistido. No almacenar contraseña, hash derivado de ella ni tokens en el diario/auditoría. Un reintento no cambia la contraseña de una identidad existente; una coincidencia de correo ajena exige invitación.
+- El modo WPF --preview usa solo datos ficticios, no crea HTTP ni toca SQLite. La captura --render-preview debe ejecutarse con WPF en Windows; no presentar una recreación en Mac como captura de la aplicación.
+- No comprar servicios/licencias, desplegar, publicar en GitHub o instalar componentes del sistema sin autorización del usuario.

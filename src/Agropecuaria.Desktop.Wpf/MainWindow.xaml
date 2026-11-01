@@ -1,0 +1,37 @@
+<Window x:Class="Agropecuaria.Desktop.Wpf.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Agropecuaria CM v2 — Desarrollo" Width="1120" Height="720" MinWidth="760" MinHeight="480"
+    Background="{DynamicResource Surface}" Foreground="{DynamicResource Ink}" FontFamily="Segoe UI" FontSize="16">
+    <Grid Margin="32">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/><RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Background="{DynamicResource StatusSurface}" Padding="16,12" CornerRadius="8" Margin="0,0,0,24"
+            Visibility="{Binding IsPreview, Converter={StaticResource BooleanVisibility}}">
+            <TextBlock Text="VISTA PREVIA · Datos ficticios. Esta ventana todavía no incluye caja, login ni todas las pantallas del sistema anterior."
+                TextWrapping="Wrap" AutomationProperties.Name="Vista previa con datos ficticios" />
+        </Border>
+        <TextBlock Grid.Row="1" Text="Agropecuaria CM" FontSize="28" FontWeight="SemiBold" Margin="0,0,0,24" />
+        <StackPanel Grid.Row="2" Margin="0,0,0,24">
+            <TextBlock Text="Inventario" FontSize="22" FontWeight="SemiBold" />
+            <TextBlock Text="Consulta las existencias guardadas en este equipo." Foreground="{DynamicResource MutedInk}" Margin="0,8,0,0" TextWrapping="Wrap" />
+        </StackPanel>
+        <DataGrid Grid.Row="3" ItemsSource="{Binding Products}" IsReadOnly="True" AutoGenerateColumns="False"
+            CanUserAddRows="False" EnableRowVirtualization="True" GridLinesVisibility="Horizontal"
+            AutomationProperties.Name="Existencias locales" RowHeight="44" BorderThickness="0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Producto" Binding="{Binding Name}" Width="*" />
+                <DataGridTextColumn Header="Disponible" Binding="{Binding Available}" Width="200" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid Grid.Row="4" Margin="0,24,0,0">
+            <Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+            <TextBlock Text="{Binding LocalStatus}" Foreground="{DynamicResource MutedInk}" TextWrapping="Wrap" Margin="0,0,16,0" VerticalAlignment="Center" />
+            <Border Grid.Column="1" Background="{DynamicResource StatusSurface}" Padding="12,8" CornerRadius="8" MaxWidth="360">
+                <TextBlock Text="{Binding CloudStatus}" FontSize="14" TextWrapping="Wrap" AutomationProperties.LiveSetting="Polite" />
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

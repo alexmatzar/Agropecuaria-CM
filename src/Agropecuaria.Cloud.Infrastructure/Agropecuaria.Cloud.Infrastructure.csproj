@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations/*.sql" />
+    <ProjectReference Include="../Agropecuaria.Application/Agropecuaria.Application.csproj" />
+    <ProjectReference Include="../Agropecuaria.Infrastructure/Agropecuaria.Infrastructure.csproj" />
+    <PackageReference Include="FirebaseAdmin" />
+    <PackageReference Include="Npgsql" />
+  </ItemGroup>
+</Project>

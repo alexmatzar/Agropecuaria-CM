@@ -1,0 +1,11 @@
+<Application x:Class="Agropecuaria.Desktop.Wpf.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Application.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanVisibility" />
+        <SolidColorBrush x:Key="Surface" Color="#F8FAFC" />
+        <SolidColorBrush x:Key="Ink" Color="#0F172A" />
+        <SolidColorBrush x:Key="MutedInk" Color="#475569" />
+        <SolidColorBrush x:Key="StatusSurface" Color="#E6E8EA" />
+    </Application.Resources>
+</Application>

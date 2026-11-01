@@ -1,0 +1,5 @@
+{
+  "name": "agropecuaria-firebase-local",
+  "private": true,
+  "devDependencies": { "firebase-tools": "15.34.2" }
+}

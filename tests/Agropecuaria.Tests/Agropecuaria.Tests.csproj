@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><IsPackable>false</IsPackable><IsTestProject>true</IsTestProject></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/Agropecuaria.Infrastructure/Agropecuaria.Infrastructure.csproj" />
+    <ProjectReference Include="../../src/Agropecuaria.Cloud.Infrastructure/Agropecuaria.Cloud.Infrastructure.csproj" />
+    <ProjectReference Include="../../src/Agropecuaria.Client/Agropecuaria.Client.csproj" />
+    <ProjectReference Include="../../src/Agropecuaria.LocalApi/Agropecuaria.LocalApi.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../src/Agropecuaria.Cloud.Api/Agropecuaria.Cloud.Api.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../tools/Agropecuaria.SyncReceiver.Dev/Agropecuaria.SyncReceiver.Dev.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="../../tools/Agropecuaria.Security.Cli/Agropecuaria.Security.Cli.csproj" ReferenceOutputAssembly="false" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio"><PrivateAssets>all</PrivateAssets></PackageReference>
+  </ItemGroup>
+</Project>

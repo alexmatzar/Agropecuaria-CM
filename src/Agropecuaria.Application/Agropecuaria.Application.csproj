@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../Agropecuaria.Domain/Agropecuaria.Domain.csproj" />
+    <ProjectReference Include="../Agropecuaria.Contracts/Agropecuaria.Contracts.csproj" />
+  </ItemGroup>
+</Project>

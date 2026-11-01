@@ -1,0 +1,11 @@
+{
+  "version":"2.0.0",
+  "tasks":[
+    {"label":"build","type":"process","command":"dotnet","args":["build","Agropecuaria.slnx"],"problemMatcher":"$msCompile","options":{"env":{"NUGET_HTTP_CACHE_PATH":"${workspaceFolder}/.cache/nuget-http"}}},
+    {"label":"test","type":"process","command":"dotnet","args":["test","Agropecuaria.slnx","--filter","Category!=FirebaseEmulator&Category!=PostgreSQL&Category!=CloudIntegration"],"problemMatcher":"$msCompile","options":{"env":{"NUGET_HTTP_CACHE_PATH":"${workspaceFolder}/.cache/nuget-http"}}},
+    {"label":"test Firebase (requiere emulador)","type":"process","command":"bash","args":["scripts/cloud-dev.sh","test"],"problemMatcher":"$msCompile"},
+    {"label":"PostgreSQL de pruebas (Docker)","type":"process","command":"bash","args":["scripts/postgres-dev.sh","docker-start"],"problemMatcher":[]},
+    {"label":"test PostgreSQL","type":"process","command":"bash","args":["scripts/postgres-dev.sh","test"],"problemMatcher":"$msCompile"},
+    {"label":"test integración completa (requiere PostgreSQL y Firebase emulado)","type":"process","command":"bash","args":["scripts/cloud-dev.sh","test-postgres"],"problemMatcher":"$msCompile"}
+  ]
+}

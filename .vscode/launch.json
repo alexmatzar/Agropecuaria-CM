@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Backend local (Mac)", "type": "coreclr", "request": "launch",
+      "preLaunchTask": "build", "program": "${workspaceFolder}/src/Agropecuaria.LocalApi/bin/Debug/net10.0/Agropecuaria.LocalApi.dll",
+      "cwd": "${workspaceFolder}", "env": {"ASPNETCORE_ENVIRONMENT":"Development","AGROPECUARIA_WORKSPACE":"${workspaceFolder}","AGROPECUARIA_MASTER_PASSWORD":"${input:masterPassword}","Identity__Mode":"Firebase","Identity__AuthorityEndpoint":"http://127.0.0.1:5189/","Firebase__EmulatorEndpoint":"http://127.0.0.1:9099/","Firebase__ApiKey":"demo-only","Sync__Enabled":"true","Sync__Mode":"Cloud"}, "console":"integratedTerminal"
+    },
+    {
+      "name": "Cloud.Api (PostgreSQL local + Firebase emulado)", "type": "coreclr", "request": "launch",
+      "preLaunchTask": "build", "program": "${workspaceFolder}/src/Agropecuaria.Cloud.Api/bin/Debug/net10.0/Agropecuaria.Cloud.Api.dll",
+      "cwd": "${workspaceFolder}", "env": {"ASPNETCORE_ENVIRONMENT":"Development","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","Firebase__ProjectId":"demo-agropecuaria-cm","Cloud__UseSqliteDevelopment":"false","Cloud__DevelopmentPostgresConfig":"${workspaceFolder}/.data/postgres-dev.json"}, "console":"integratedTerminal"
+    },
+    {
+      "name": "Autoridad de cuentas (emulador local)", "type": "coreclr", "request": "launch",
+      "preLaunchTask": "build", "program": "${workspaceFolder}/src/Agropecuaria.Cloud.Api/bin/Debug/net10.0/Agropecuaria.Cloud.Api.dll",
+      "cwd": "${workspaceFolder}", "env": {"ASPNETCORE_ENVIRONMENT":"Development","FIREBASE_AUTH_EMULATOR_HOST":"127.0.0.1:9099","Firebase__ProjectId":"demo-agropecuaria-cm","Cloud__UseSqliteDevelopment":"true","Cloud__DevelopmentDatabase":"${workspaceFolder}/.data/cloud-memberships.dev.db"}, "console":"integratedTerminal"
+    },
+    {
+      "name": "Receptor de sincronización (solo desarrollo)", "type": "coreclr", "request": "launch",
+      "preLaunchTask": "build", "program": "${workspaceFolder}/tools/Agropecuaria.SyncReceiver.Dev/bin/Debug/net10.0/Agropecuaria.SyncReceiver.Dev.dll",
+      "cwd": "${workspaceFolder}", "env": {"ASPNETCORE_ENVIRONMENT":"Development","AGROPECUARIA_WORKSPACE":"${workspaceFolder}"}, "console":"integratedTerminal"
+    }
+  ],
+  "inputs": [{"id":"masterPassword","type":"promptString","description":"Frase maestra del backend local","password":true}]
+}

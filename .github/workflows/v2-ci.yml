@@ -1,0 +1,87 @@
+name: v2 backend and Windows preview
+on:
+  push:
+    branches: [v2]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: v2-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:18.6@sha256:3a4264520e121176619f54ff867d12774bc81e95e7b84db58d63bccdb6144b81
+        env:
+          POSTGRES_USER: agro_ci
+          POSTGRES_PASSWORD: ci-only-disposable-password
+          POSTGRES_DB: postgres
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U agro_ci -d postgres"
+          --health-interval 5s --health-timeout 3s --health-retries 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
+        with:
+          dotnet-version: 10.0.400
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+      - name: Restore and build backend
+        run: |
+          dotnet restore Agropecuaria.slnx --locked-mode
+          dotnet build Agropecuaria.slnx --no-restore
+      - name: Prepare disposable PostgreSQL credentials
+        run: |
+          mkdir -p .data
+          printf '%s' '{"port":5432,"username":"agro_ci","password":"ci-only-disposable-password","database":"postgres"}' > .data/postgres-dev.json
+          chmod 600 .data/postgres-dev.json
+      - name: Firebase Emulator and complete backend tests
+        env:
+          FIREBASE_CLI_DISABLE_USAGE_REPORTING: "true"
+        run: |
+          npm ci --prefix tools/firebase --ignore-scripts --no-fund
+          node tools/firebase/node_modules/firebase-tools/lib/bin/firebase.js emulators:exec --only auth --project demo-agropecuaria-cm --config tools/firebase/firebase.json "dotnet test tests/Agropecuaria.Tests --no-build --filter Category!=WindowsOnly"
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-dotnet@a98b56852c35b8e3190ac28c8c2271da59106c68 # v6.0.0
+        with:
+          dotnet-version: 10.0.400
+      - name: Build WPF and test Windows backend and DPAPI
+        shell: pwsh
+        run: |
+          dotnet restore Agropecuaria.slnx --locked-mode
+          if ($LASTEXITCODE -ne 0) { throw "Restore backend failed" }
+          dotnet restore Agropecuaria.Windows.slnx --locked-mode
+          if ($LASTEXITCODE -ne 0) { throw "Restore Windows failed" }
+          dotnet build Agropecuaria.Windows.slnx --no-restore
+          if ($LASTEXITCODE -ne 0) { throw "Build Windows failed" }
+          dotnet test tests/Agropecuaria.Tests --no-restore --filter "Category!=FirebaseEmulator&Category!=PostgreSQL&Category!=CloudIntegration"
+          if ($LASTEXITCODE -ne 0) { throw "Windows tests failed" }
+      - name: Publish self contained Windows package and render actual WPF
+        shell: pwsh
+        run: |
+          ./scripts/publish-windows-preview.ps1
+          $root = Join-Path $PWD ".artifacts/windows-x64"
+          $image = Join-Path $root "vista-previa-wpf.png"
+          $process = Start-Process -FilePath (Join-Path $root "ui/Agropecuaria.Desktop.Wpf.exe") -ArgumentList @("--render-preview", $image) -PassThru
+          if (-not $process.WaitForExit(30000)) { $process.Kill(); throw "WPF no termino el render en 30 segundos." }
+          if ($process.ExitCode -ne 0 -or -not (Test-Path $image) -or (Get-Item $image).Length -lt 10000) { throw "No se pudo verificar el render WPF." }
+          $version = (Get-Content VERSION -Raw).Trim()
+          $zip = Join-Path $PWD ".artifacts/Agropecuaria-CM-$version-windows-x64-preview.zip"
+          Compress-Archive -Path "$root/*" -DestinationPath $zip
+          (Get-FileHash $zip -Algorithm SHA256).Hash | Set-Content "$zip.sha256"
+          Copy-Item $image ".artifacts/vista-previa-wpf.png"
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: windows-x64-preview
+          path: |
+            .artifacts/*.zip
+            .artifacts/*.sha256
+            .artifacts/vista-previa-wpf.png
+          retention-days: 14

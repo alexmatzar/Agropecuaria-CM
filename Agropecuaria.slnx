@@ -1,0 +1,19 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Agropecuaria.Cloud.Api/Agropecuaria.Cloud.Api.csproj" />
+    <Project Path="src/Agropecuaria.Cloud.Infrastructure/Agropecuaria.Cloud.Infrastructure.csproj" />
+    <Project Path="src/Agropecuaria.Domain/Agropecuaria.Domain.csproj" />
+    <Project Path="src/Agropecuaria.Contracts/Agropecuaria.Contracts.csproj" />
+    <Project Path="src/Agropecuaria.Application/Agropecuaria.Application.csproj" />
+    <Project Path="src/Agropecuaria.Infrastructure/Agropecuaria.Infrastructure.csproj" />
+    <Project Path="src/Agropecuaria.LocalApi/Agropecuaria.LocalApi.csproj" />
+    <Project Path="src/Agropecuaria.Client/Agropecuaria.Client.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Agropecuaria.Tests/Agropecuaria.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/Agropecuaria.Security.Cli/Agropecuaria.Security.Cli.csproj" />
+    <Project Path="tools/Agropecuaria.SyncReceiver.Dev/Agropecuaria.SyncReceiver.Dev.csproj" />
+  </Folder>
+</Solution>

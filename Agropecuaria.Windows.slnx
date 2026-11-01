@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/Agropecuaria.Desktop.Wpf/Agropecuaria.Desktop.Wpf.csproj" />
+  <Project Path="src/Agropecuaria.LocalApi/Agropecuaria.LocalApi.csproj" />
+</Solution>
