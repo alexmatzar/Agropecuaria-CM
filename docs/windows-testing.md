@@ -23,7 +23,7 @@ $env:NUGET_HTTP_CACHE_PATH = "$PWD\.cache\nuget-http"
 dotnet run --project src/Agropecuaria.Desktop.Wpf -- --preview
 ~~~
 
-Elegir el SDK x64 para una PC Intel/AMD x64. Confirmar versión con winver y mantener el sistema actualizado. Para ARM64 habría que producir otro paquete. No instalar Visual Studio 2016 para este proyecto: el repositorio usa .NET 10.
+Elegir el SDK x64 para una PC Intel/AMD x64. Preferir Windows 11 actualizado. En Windows 10, confirmar edición/versión con winver y comprobar la tabla de sistemas admitidos por .NET 10: no todas sus ediciones conservan soporte. Para ARM64 habría que producir otro paquete. No instalar Visual Studio 2016 para este proyecto: el repositorio usa .NET 10.
 
 [SDK oficial](https://dotnet.microsoft.com/download/dotnet/10.0) y [sistemas admitidos](https://github.com/dotnet/core/blob/main/release-notes/10.0/supported-os.md).
 

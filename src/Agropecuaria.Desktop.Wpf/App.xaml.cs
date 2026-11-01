@@ -24,7 +24,7 @@ public partial class App : System.Windows.Application
                 {
                     try
                     {
-                        var content = (FrameworkElement)preview.Content;
+                        FrameworkElement content = preview;
                         content.UpdateLayout();
                         var bitmap = new RenderTargetBitmap((int)Math.Ceiling(content.ActualWidth), (int)Math.Ceiling(content.ActualHeight), 96, 96, PixelFormats.Pbgra32);
                         bitmap.Render(content);
