@@ -26,7 +26,7 @@ public partial class App : System.Windows.Application
                     {
                         FrameworkElement content = preview;
                         content.UpdateLayout();
-                        var bitmap = new RenderTargetBitmap((int)Math.Ceiling(content.ActualWidth), (int)Math.Ceiling(content.ActualHeight), 96, 96, PixelFormats.Pbgra32);
+                        var bitmap = new RenderTargetBitmap((int)Math.Ceiling(content.RenderSize.Width), (int)Math.Ceiling(content.RenderSize.Height), 96, 96, PixelFormats.Pbgra32);
                         bitmap.Render(content);
                         var encoder = new PngBitmapEncoder(); encoder.Frames.Add(BitmapFrame.Create(bitmap));
                         using var output = new FileStream(Path.GetFullPath(e.Args[1]), FileMode.CreateNew, FileAccess.Write);
