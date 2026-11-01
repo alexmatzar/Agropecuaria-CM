@@ -45,7 +45,7 @@ Roles: Admin (operación y gestión), Cashier (consulta y venta) y Viewer (consu
 - Reset por Admin: no devuelve contraseñas anteriores. Se bloquea si el UID ya pertenece a varias sucursales/negocios para evitar que un administrador se apropie de una identidad compartida.
 - Una cuenta Firebase ya existente no se sobrescribe al darla de alta. El flujo de invitación para vincularla a otra sucursal queda pendiente.
 
-El alta Firebase y la escritura PostgreSQL son dos sistemas distintos: aún falta un diario de aprovisionamiento idempotente y conciliación. Si la membresía falla después del alta, la cuenta Firebase puede quedar sin acceso. No se elimina automáticamente una cuenta existente para compensar un fallo. Completar este flujo y la auditoría central antes de habilitar producción.
+El alta Firebase y la escritura PostgreSQL son dos sistemas distintos. La migración 003 añade un diario persistente con OperationId y UID por negocio/sucursal/operación: reanuda una identidad creada aunque se pierda la respuesta y vuelve a comprobar al Admin antes de conceder membresía. El diario no guarda contraseñas. La auditoría central registra altas, cambios de rol/estado y operaciones de contraseña. El flujo de invitación para cuentas existentes sigue pendiente. Ver [estado del backend](backend-readiness.md).
 
 El modo antiguo de cuentas locales queda reservado a pruebas: exige `Identity__Mode=LocalDevelopment` y `Identity__AllowLegacyLocalForTests=true`. Sus CLI de administración requieren además `AGROPECUARIA_ALLOW_LEGACY_LOCAL_TESTS=true`. No se utiliza como fallback ni es la política de la aplicación nueva.
 

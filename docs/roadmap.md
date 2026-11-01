@@ -18,7 +18,7 @@ Carrito WPF, entrada manual/lector sin asumir longitud única, medios de pago, c
 
 Implementado y probado: migraciones SQL verificadas, outbox hacia Cloud.Api/PostgreSQL, dispositivos revocables, inbox y aplicación de eventos en una transacción del servidor, deduplicación y descarga por cursor hacia otra SQLite cifrada. Pruebas de aislamiento, cortes/reanudación automática, duplicados, revocaciones y reemplazo de escritor. Ver ADR 004.
 
-Siguiente entrega: diario de aprovisionamiento Firebase e invitaciones, auditoría central de cuentas, imágenes con almacenamiento de objetos, conciliación de backups con operaciones nunca enviadas, snapshots/cortes de restauración para historiales grandes y operación administrada de backups/PITR. Mantener una sola autoridad de stock por sucursal hasta diseñar explícitamente múltiples cajas conectadas por LAN.
+Implementados después: diario recuperable de aprovisionamiento Firebase y auditoría central de cambios de cuentas. Siguiente entrega: invitaciones, imágenes con almacenamiento de objetos, conciliación de backups con operaciones nunca enviadas, snapshots/cortes de restauración para historiales grandes y operación administrada de backups/PITR. Mantener una sola autoridad de stock por sucursal hasta diseñar explícitamente múltiples cajas conectadas por LAN.
 
 Crear un proyecto Firebase NUEVO según la preferencia confirmada por el usuario, después de preparar la integración local. Configurar proveedor email/password y despliegue seguro, elegir región, backups y costes antes de contratar recursos. El prototipo local no equivale a un despliegue cloud ni a respaldo fuera del equipo.
 

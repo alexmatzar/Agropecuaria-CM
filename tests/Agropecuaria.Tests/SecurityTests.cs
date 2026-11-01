@@ -35,7 +35,13 @@ public sealed class SecurityTests : IDisposable
         Assert.Throws<SqliteException>(() => SqliteDatabase.Open(Path.Combine(directory, "secure.db")));
         Assert.Throws<SqliteException>(() => SqliteDatabase.Open(Path.Combine(directory, "secure.db"), RandomNumberGenerator.GetBytes(32)));
         foreach (var file in Directory.GetFiles(directory, "secure.db*"))
-            Assert.DoesNotContain("SensitiveBusinessMarker987", Encoding.UTF8.GetString(File.ReadAllBytes(file)));
+        {
+            // SQLite keeps write handles open for DB/WAL. Raw inspection must allow
+            // the same sharing mode on Windows while preserving the live WAL check.
+            using var raw = new FileStream(file, FileMode.Open, FileAccess.Read, FileShare.ReadWrite | FileShare.Delete);
+            using var bytes = new MemoryStream(); raw.CopyTo(bytes);
+            Assert.DoesNotContain("SensitiveBusinessMarker987", Encoding.UTF8.GetString(bytes.ToArray()));
+        }
         Assert.Equal(5, Assert.Single(Store().ListProducts()).StockBase);
     }
     [Fact]

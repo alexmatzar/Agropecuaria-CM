@@ -59,6 +59,8 @@ Cloud.Api mantiene identidad y negocio en módulos del mismo proceso. PostgreSQL
 
 DDL revisable en [001_identity.sql](../src/Agropecuaria.Cloud.Infrastructure/Migrations/001_identity.sql) y [002_replication.sql](../src/Agropecuaria.Cloud.Infrastructure/Migrations/002_replication.sql). Se aplican bajo lock de migración y una transacción. Una migración aplicada cuyo hash cambia provoca un rechazo; añadir otra versión para cambios posteriores.
 
+La migración [003_account_provisioning.sql](../src/Agropecuaria.Cloud.Infrastructure/Migrations/003_account_provisioning.sql) añade el diario de alta de cuentas y auditoría central, sin modificar las versiones aplicadas anteriores.
+
 Las claves y consultas incluyen negocio y sucursal. Las transacciones de recepción serializan modificaciones de una sucursal mediante un lock de su fila, sin bloquear todos los negocios en una misma cola. Las pruebas verifican aislamiento y concurrencia contra PostgreSQL real. El despliegue futuro debe separar el rol que aplica DDL del rol limitado de ejecución, configurar TLS, respaldos/PITR y observabilidad.
 
 ## Protocolo de sincronización
@@ -160,7 +162,7 @@ bash scripts/cloud-dev.sh test
 bash scripts/cloud-dev.sh test-postgres
 ```
 
-Pruebas generales sin procesos externos: 78. PostgreSQL real: 9. Firebase emulado/HTTP de identidad: 2. Integración completa: 1. Total verificado: 90. Cada prueba PostgreSQL usa un esquema temporal propio y lo elimina al terminar.
+La suite actual incluye 95 casos portables (82 generales, 10 PostgreSQL, 2 de Firebase y 1 de integración completa) y una prueba DPAPI exclusiva de Windows. La primera ejecución de CI verifica el backend en Linux y otro trabajo valida Windows/WPF. Cada prueba PostgreSQL usa un esquema temporal propio y lo elimina al terminar. El resultado verificable está en GitHub Actions.
 
 Para probar manualmente los servidores, preparar claves y configuración, levantar Auth Emulator y PostgreSQL y usar:
 

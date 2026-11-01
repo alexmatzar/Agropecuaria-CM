@@ -147,7 +147,7 @@ Total Q90.00. Usar identificadores nuevos para operaciones nuevas y conservar el
 
 ## Límites y siguiente entrega
 
-LocalApi y Cloud.Api mantienen el bloqueo de Production. HTTP loopback, Firebase emulado y PostgreSQL del contenedor son de desarrollo. Faltan proyecto Firebase real, despliegue administrado, TLS/ACL/identidad de servicio, instalador, auditoría central completa de cuentas, conciliación de aprovisionamiento Firebase, copias/PITR y ensayos de recuperación operativa.
+LocalApi y Cloud.Api mantienen el bloqueo de Production. HTTP loopback, Firebase emulado y PostgreSQL del contenedor son de desarrollo. El diario de alta y la auditoría de cambios de cuentas ya están implementados. Faltan Firebase real, despliegue administrado, TLS/ACL/identidad de servicio, instalador, invitaciones, observabilidad/retención, copias/PITR y ensayos de recuperación operativa.
 
 La sincronización actual cubre altas de catálogo, ventas nuevas y archivo histórico convertido; no implementa aún edición remota de precios, compras, devoluciones, lotes o resolución de múltiples escritores offline. Un backup de un equipo enlazado elimina su credencial y queda sin autoridad de escritura; no se puede clonar para abrir una segunda caja. La reactivación de backups con ventas no enviadas requiere un procedimiento de conciliación todavía pendiente.
 
